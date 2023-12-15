@@ -48,11 +48,10 @@ function App() {
   return (
     <div>
       <Header />
-      
+
       <div className={styles.wrapper}>
-        <div className={styles.wrapper}>
-          <Sidebar />
-          <main>
+        <Sidebar />
+        <main>
           {posts.map(post => {
             return (
               <Post
@@ -61,11 +60,10 @@ function App() {
               />
             )
           })}
-          </main>
-        </div>
+        </main>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
